@@ -1,0 +1,29 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "joinRoom_four",
+    "texture": "aa5afe72-fbe0-4a71-ad57-748f91a4ff49",
+    "atlas": "b6c10ec7-bd58-41b2-bdc0-be90d4ae996d",
+    "rect": [
+      166,
+      106,
+      39,
+      48
+    ],
+    "offset": [
+      0,
+      -3
+    ],
+    "originalSize": [
+      247,
+      102
+    ],
+    "rotated": 1,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

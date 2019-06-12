@@ -1,0 +1,50 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "joinRoom.plist",
+  "_objFlags": 0,
+  "_native": "",
+  "_spriteFrames": {
+    "joinRoom_del": {
+      "__uuid__": "0e9037cb-19cb-4e7e-a21c-2d77873e80ff"
+    },
+    "joinRoom_eight": {
+      "__uuid__": "47c60b0b-19c1-4647-8951-95ff3b503a72"
+    },
+    "joinRoom_five": {
+      "__uuid__": "b35fce14-95e4-4695-9c61-acea16385e9d"
+    },
+    "joinRoom_four": {
+      "__uuid__": "24f2ccfc-16a7-4112-8d9f-5764d1053d72"
+    },
+    "joinRoom_nine": {
+      "__uuid__": "3d301246-c308-4514-a0a4-ac41387948b0"
+    },
+    "joinRoom_num_bg": {
+      "__uuid__": "47370c02-0222-4f35-8732-8b99d1b64e45"
+    },
+    "joinRoom_one": {
+      "__uuid__": "d74c7413-de37-4f38-87d3-8d390c5f7616"
+    },
+    "joinRoom_reInput": {
+      "__uuid__": "567dfe65-a49b-4f5f-879f-6443321aaec2"
+    },
+    "joinRoom_selected": {
+      "__uuid__": "d1b567b7-f552-47c1-be17-a73ae1bbf6ba"
+    },
+    "joinRoom_seven": {
+      "__uuid__": "3c9a2bbb-c4c2-4ffa-b4ec-cf5668265b55"
+    },
+    "joinRoom_six": {
+      "__uuid__": "578ad8ba-0c53-4511-8d76-5fff492b47a9"
+    },
+    "joinRoom_three": {
+      "__uuid__": "2abcff16-761b-4402-b37a-6191ceb57f12"
+    },
+    "joinRoom_two": {
+      "__uuid__": "7d6ae4c6-6fca-48cc-812a-c7c0cc49b4f0"
+    },
+    "joinRoom_zero": {
+      "__uuid__": "fe95afd1-af75-4b12-af54-7600b576132f"
+    }
+  }
+}

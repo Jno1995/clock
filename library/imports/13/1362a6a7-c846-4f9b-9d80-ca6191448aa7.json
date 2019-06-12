@@ -1,0 +1,129 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "menu",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2.3,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": "1",
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "fillRange": [
+          {
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "frame": 2.0166666666666666,
+            "value": 0.5
+          }
+        ]
+      }
+    },
+    "paths": {
+      "03": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.65,
+              "value": 0
+            },
+            {
+              "frame": 1,
+              "value": 255
+            }
+          ],
+          "active": [
+            {
+              "frame": 0.65,
+              "value": true
+            }
+          ]
+        }
+      },
+      "05": {
+        "props": {
+          "active": [
+            {
+              "frame": 0.35,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.35,
+              "value": 0
+            },
+            {
+              "frame": 0.65,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "01": {
+        "props": {
+          "active": [
+            {
+              "frame": 1.1833333333333333,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 1.1833333333333333,
+              "value": 0
+            },
+            {
+              "frame": 1.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "02": {
+        "props": {
+          "active": [
+            {
+              "frame": 1.6666666666666667,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 1.6666666666666667,
+              "value": 0
+            },
+            {
+              "frame": 1.9666666666666666,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "04": {
+        "props": {
+          "active": [
+            {
+              "frame": 1.9833333333333334,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 1.9833333333333334,
+              "value": 0
+            },
+            {
+              "frame": 2.3,
+              "value": 255
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

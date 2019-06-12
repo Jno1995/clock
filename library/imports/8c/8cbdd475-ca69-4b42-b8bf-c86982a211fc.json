@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "touming",
+    "texture": "b0cc60f7-8e65-4008-ad3f-fd1ac9ce8efb",
+    "atlas": "",
+    "rect": [
+      234,
+      95,
+      1,
+      1
+    ],
+    "offset": [
+      117,
+      -47.5
+    ],
+    "originalSize": [
+      235,
+      96
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

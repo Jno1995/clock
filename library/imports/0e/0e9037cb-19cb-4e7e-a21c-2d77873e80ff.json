@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "joinRoom_del",
+    "texture": "aa5afe72-fbe0-4a71-ad57-748f91a4ff49",
+    "atlas": "b6c10ec7-bd58-41b2-bdc0-be90d4ae996d",
+    "rect": [
+      2,
+      178,
+      73,
+      46
+    ],
+    "offset": [
+      0,
+      -2
+    ],
+    "originalSize": [
+      247,
+      102
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
