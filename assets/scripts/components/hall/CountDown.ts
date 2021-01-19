@@ -12,15 +12,14 @@ const {ccclass, property} = cc._decorator;
 
 @ccclass
 export default class NewClass extends cc.Component {
-    _countDownNum: number = 0;
+    _nextTime: number = 0;
     // LIFE-CYCLE CALLBACKS:
 
     // onLoad () {}
     start () {
         setInterval(()=> {
-            if (this._countDownNum !== 0) {
-                this.node.getComponent(cc.Label).string = cc.Utils.getTimeString(this._countDownNum);
-                this._countDownNum--;
+            if (this._nextTime !== 0) {
+                this.node.getComponent(cc.Label).string = cc.Utils.formatDuring(this._nextTime);
             }
         }, 1000);
     }

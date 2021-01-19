@@ -354,6 +354,37 @@ const Utils = {
         return dateStr;
     },
 
+    // 取得两个时间戳之间相差的时间
+    formatDuring(startTime, endTime) {
+        if (endTime === undefined) {
+            var endTime = startTime;
+            var startTime = Date.now();
+        }
+        
+        var difference = endTime - startTime;  //时间差的毫秒数
+        
+        //计算出相差天数
+        // var days = Math.floor(difference / (24 * 3600 * 1000));
+        
+        //计算出小时数
+        
+        var leave1 = difference % (24 * 3600 * 1000)    //计算天数后剩余的毫秒数
+        var hours = Math.floor(leave1 / (3600 * 1000))
+        var _hours = hours < 10 ? "0" + hours : hours;
+        //计算相差分钟数
+        var leave2 = leave1 % (3600 * 1000)        //计算小时数后剩余的毫秒数
+        var minutes = Math.floor(leave2 / (60 * 1000))
+        var _minutes = minutes < 10 ? "0" + minutes : minutes;
+        
+        //计算相差秒数
+        var leave3 = leave2 % (60 * 1000)      //计算分钟数后剩余的毫秒数
+        var seconds = Math.round(leave3 / 1000)
+        var _seconds = seconds < 10 ? "0" + seconds : seconds;
+        
+        var t_string = `${_hours}:${_minutes}:${_seconds}`;
+        return t_string;
+    },
+
     // 普通邀请分享，带邀请链接
     shareGame(title, imgUrl, witchShareTicket, matchId, sceneID) {
         if (cc.vv.wxHelper.iswxPlatform()) {

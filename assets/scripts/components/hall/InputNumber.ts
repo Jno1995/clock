@@ -31,7 +31,6 @@ export default class NewClass extends cc.Component {
     }
 
     onNumBtnClicked (event, CustomEventData) {
-        // cc.vv.audioMgr.playClickedBgm();
         if (this._inputCount < 6) {
             if (this._inputCount === 2 || this._inputCount == 4) {
                 if (CustomEventData >= 6) {
@@ -47,8 +46,19 @@ export default class NewClass extends cc.Component {
                 var hour = Number(this._timeNum[0] + this._timeNum[1]);
                 var minute = Number(this._timeNum[2] + this._timeNum[3]);
                 var second = Number(this._timeNum[4] + this._timeNum[5]);
-                cc.find("Canvas/n_layout/l_countDown").getComponent(cc.Label).string = cc.Utils.getTimeString(hour * 3600 + minute * 60 + second);
-                cc.find("Canvas/n_layout/l_countDown").getComponent("CountDown")._countDownNum = hour * 3600 + minute * 60 + second;
+
+                var _Date = new Date();
+                var year = _Date.getUTCFullYear();
+                var month = Number(_Date.getUTCMonth()) + 1;
+                var _month = month < 10 ? "0" + month : month;
+                var day = Number(_Date.getUTCDate());
+                var _day = day < 10 ? "0" + day : day;
+
+                var t_next = Date.parse(`${_month} ${_day} ${year} ${hour}:${minute}:${second}`);
+                var t_difference = cc.Utils.formatDuring(t_next);
+                
+                cc.find("Canvas/n_layout/l_countDown").getComponent(cc.Label).string = t_difference;
+                cc.find("Canvas/n_layout/l_countDown").getComponent("CountDown")._nextTime = t_next;
             }
         } else {
             return;
@@ -56,17 +66,15 @@ export default class NewClass extends cc.Component {
     }
 
     onResetBtnClicked () {
-        // cc.vv.audioMgr.playClickedBgm();
         for (var i=0; i<this.inputBox['children'].length; i++) {
             this.inputBox['children'][i]['children'][0].getComponent(cc.Label).string = '';
         }
     }
 
     onCleanBtnClicked () {
-        // cc.vv.audioMgr.playClickedBgm();
         if (this._inputCount == 0) {
             return;
-        }else {
+        } else {
             this.inputBox['children'][this._inputCount - 1]['children'][0].getComponent(cc.Label).string = '';
             this._inputCount--;
         }
