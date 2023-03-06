@@ -25,7 +25,14 @@ export default class NewClass extends cc.Component {
     inputNumber: cc.Prefab;
     // LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {}
+    onLoad () {
+        var nextTime = cc.sys.localStorage.getItem('nextTime');
+        if (nextTime) {
+            var t_difference = cc.Utils.formatDuring(nextTime);
+            cc.find("Canvas/n_layout/l_countDown").getComponent(cc.Label).string = t_difference;
+            cc.find("Canvas/n_layout/l_countDown").getComponent("CountDown")._nextTime = nextTime;
+        }
+    }
 
     start () {
         this.initListenHandlers();

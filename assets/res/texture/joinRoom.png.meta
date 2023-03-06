@@ -1,14 +1,21 @@
 {
-  "ver": "2.2.0",
+  "ver": "2.3.7",
   "uuid": "aa5afe72-fbe0-4a71-ad57-748f91a4ff49",
+  "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 253,
+  "height": 251,
+  "platformSettings": {},
   "subMetas": {
     "joinRoom": {
-      "ver": "1.0.4",
+      "ver": "1.0.6",
       "uuid": "7433257b-ad72-4a87-b430-71b8134f8975",
+      "importer": "sprite-frame",
       "rawTextureUuid": "aa5afe72-fbe0-4a71-ad57-748f91a4ff49",
       "trimType": "auto",
       "trimThreshold": 1,

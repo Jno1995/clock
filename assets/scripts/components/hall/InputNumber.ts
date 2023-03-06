@@ -55,6 +55,9 @@ export default class NewClass extends cc.Component {
                 var _day = day < 10 ? "0" + day : day;
 
                 var t_next = Date.parse(`${_month} ${_day} ${year} ${hour}:${minute}:${second}`);
+
+                cc.sys.localStorage.setItem('nextTime', t_next.toString());
+                
                 var t_difference = cc.Utils.formatDuring(t_next);
                 
                 cc.find("Canvas/n_layout/l_countDown").getComponent(cc.Label).string = t_difference;

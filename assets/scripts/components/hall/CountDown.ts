@@ -13,13 +13,17 @@ const {ccclass, property} = cc._decorator;
 @ccclass
 export default class NewClass extends cc.Component {
     _nextTime: number = 0;
-    // LIFE-CYCLE CALLBACKS:
 
     // onLoad () {}
     start () {
-        setInterval(()=> {
+        var labelComp = this.node.getComponent(cc.Label);
+        var interval = setInterval(()=> {
             if (this._nextTime !== 0) {
-                this.node.getComponent(cc.Label).string = cc.Utils.formatDuring(this._nextTime);
+                labelComp.string = cc.Utils.formatDuring(this._nextTime);
+
+                if  (labelComp.string.indexOf("time is up") >= 0) {
+                    clearInterval(interval);
+                }
             }
         }, 1000);
     }

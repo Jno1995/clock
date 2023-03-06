@@ -381,7 +381,12 @@ const Utils = {
         var seconds = Math.round(leave3 / 1000)
         var _seconds = seconds < 10 ? "0" + seconds : seconds;
         
-        var t_string = `${_hours}:${_minutes}:${_seconds}`;
+        var t_string = ``;
+        if (hours >= 0 && minutes >= 0 && seconds >= 0) {
+            t_string = `${_hours}:${_minutes}:${_seconds}`;
+        } else {
+            t_string = `time is up`;
+        }
         return t_string;
     },
 
