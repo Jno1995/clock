@@ -26,8 +26,9 @@ export default class NewClass extends cc.Component {
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
+        // nextTime 获取到的是一个时间戳值
         var nextTime = cc.sys.localStorage.getItem('nextTime');
-        if (nextTime) {
+        if (nextTime && Number(nextTime) > cc.Utils.getNowTimeStamp() * 1000) {
             var t_difference = cc.Utils.formatDuring(nextTime);
             cc.find("Canvas/n_layout/l_countDown").getComponent(cc.Label).string = t_difference;
             cc.find("Canvas/n_layout/l_countDown").getComponent("CountDown")._nextTime = nextTime;
